@@ -1,4 +1,4 @@
-@import "detail.css";
+@import "details.css"; /* Changed detail to details  */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
 /*Typography
@@ -19,3 +19,6 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+.container {
+	width: 95%;
+}

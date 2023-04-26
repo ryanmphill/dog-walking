@@ -1,16 +1,16 @@
-import { getWalkers } from "./database.js"
+import { getWalkers } from "./database.js" // Added an 's' to 'getWalkers'
 
-const walkers = getWalker()
+const walkers = getWalkers()  // Added an 's' to 'getWalkers'
 
 
 export const CityList = () => {
-    let citiesHTML = "<ol>"
+    let citiesHTML = "<ul>"  // changed to unordered list
 
     for (const walker of walkers) {
-        citiesHTML += `<li>${currentWalker.city}</li>`
+        citiesHTML += `<li>${walker.city}</li>` // Changed currentWalker to walker
     }
 
-    citiesHTML += "</ol>"
+    citiesHTML += "</ul>"
 
     return citiesHTML
 }
